@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { type SanityDocument } from "next-sanity";
-
 import { client } from "@/sanity/client";
+import { Separator } from "@/components/ui/separator";
+import { Button } from "@/components/ui/button";
 
 const POSTS_QUERY = `*[
   _type == "post"
@@ -28,6 +29,12 @@ export default async function IndexPage() {
           </li>
         ))}
       </ul>
+
+      <Separator className="my-8" />
+
+      <Link href={"/us/obit-writer/obituary"}>
+        <Button>Write an Obituary</Button>
+      </Link>
     </main>
   );
 }
