@@ -19,12 +19,12 @@ export default function ObitWriterFormDetailsStep() {
   return (
     <div>
       <h1 className="text-2xl font-semibold leading-tight md:text-3xl pt-2">
-        John's Story
+        John&apos;s Story
       </h1>
 
       <p>
-        You're doing a great job. We need a few additional details to create
-        John's obituary. Please fill them in below.
+        You&apos;re doing a great job. We need a few additional details to
+        create John&apos;s obituary. Please fill them in below.
       </p>
 
       <Card className="rounded-lg border-3 border-[#cbaa73] shadow-none gap-0 pb-0 mt-8">
