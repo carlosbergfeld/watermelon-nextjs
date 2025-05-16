@@ -9,7 +9,7 @@ export default function ObitWriter() {
       <ObitWriterHeader />
 
       <main className="mx-auto w-full max-w-2xl px-4 py-10 md:py-16">
-        <header className="mb-8 space-y-2">
+        <header>
           <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
             Obit Writer
           </p>

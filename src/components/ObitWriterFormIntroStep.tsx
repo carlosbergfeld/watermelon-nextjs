@@ -18,11 +18,11 @@ export default function ObitWriterFormIntroStep() {
 
   return (
     <div>
-      <h1 className="text-2xl font-semibold leading-tight md:text-3xl">
+      <h1 className="text-2xl font-semibold leading-tight md:text-3xl pt-2">
         Tell us about your loved one
       </h1>
 
-      <Card className="rounded-lg border-3 border-[#cbaa73] shadow-none gap-0 pb-0">
+      <Card className="rounded-lg border-3 border-[#cbaa73] shadow-none gap-0 pb-0 mt-8">
         <CardContent className="flex flex-col p-0">
           <FormField
             control={control}
