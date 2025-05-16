@@ -7,10 +7,10 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
-import { Textarea } from "@/components/ui/textarea";
+import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
-export default function ObitWriterFormIntroStep() {
+export default function ObitWriterFormDetailsStep() {
   const {
     control,
     formState: { isValid },
@@ -19,24 +19,31 @@ export default function ObitWriterFormIntroStep() {
   return (
     <div>
       <h1 className="text-2xl font-semibold leading-tight md:text-3xl pt-2">
-        Tell us about your loved one
+        John's Story
       </h1>
 
+      <p>
+        You're doing a great job. We need a few additional details to create
+        John's obituary. Please fill them in below.
+      </p>
+
       <Card className="rounded-lg border-3 border-[#cbaa73] shadow-none gap-0 pb-0 mt-8">
-        <CardContent className="flex flex-col p-4">
+        <CardContent className="flex flex-col p-4 space-y-4 pb-8">
+          <p>Please add a few more required details about your loved one:</p>
+
           <FormField
             control={control}
-            name="intro"
+            name="lastName"
             rules={{
               required: true,
             }}
             render={({ field }) => (
               <FormItem>
                 <FormControl>
-                  <Textarea
-                    placeholder="Paste the obituary here, as well as any additional memories or thoughts you want to include."
-                    className="min-h-[16rem] resize-none border-none focus-visible:ring-0 shadow-none"
+                  <Input
+                    placeholder="Last Name *"
                     {...field}
+                    className=" md:text-lg text-lg py-6 rounded-none bg-gray-50"
                   />
                 </FormControl>
                 <FormMessage />
