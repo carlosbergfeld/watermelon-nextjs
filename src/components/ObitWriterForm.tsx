@@ -20,15 +20,16 @@ export default function ObitWriterForm() {
     mode: "onChange",
   });
 
+  function onSubmit(data: FormData) {
+    console.log(data);
+  }
+
   return (
     <Form {...form}>
       <form
         aria-labelledby="loved-one-form-title"
         className="space-y-6"
-        onSubmit={(e) => {
-          e.preventDefault();
-          // TODO: handle submit (e.g., save to state/store & navigate)
-        }}
+        onSubmit={form.handleSubmit(onSubmit)}
       >
         <label htmlFor="obituary" className="sr-only">
           Obituary text
