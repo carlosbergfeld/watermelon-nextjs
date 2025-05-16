@@ -9,8 +9,6 @@ export type FormData = {
   lastName: string;
 };
 
-const steps = ["intro", "details"];
-
 export default function ObitWriterForm() {
   const [step, setStep] = useState("intro");
   const form = useForm<FormData>({
